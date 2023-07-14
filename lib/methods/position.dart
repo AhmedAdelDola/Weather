@@ -16,6 +16,10 @@ import 'package:geolocator/geolocator.dart';
        return await Geolocator.getCurrentPosition();
 
      }
+     if (per == LocationPermission.whileInUse) {
+       return await Geolocator.getCurrentPosition();
+
+     }
    }
    return await Geolocator.getCurrentPosition();
  }
